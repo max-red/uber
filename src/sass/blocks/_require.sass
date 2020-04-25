@@ -1,0 +1,47 @@
+.require
+    padding: 68px 0 84px 0
+    &__items
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+    &__block
+        margin: 33px 15px
+
+        &_nmb
+            margin-bottom: 0
+    &__title
+        font-size: 22px
+        font-weight: 400
+        color: #1ca8c3
+        &_warning
+            color: $second-color
+    &__list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            position: relative
+            font-size: 17px
+            font-weight: 300
+            color: #222222
+            margin-bottom: 10px
+            &:before
+                content: ""
+                display: block
+                position: absolute
+                left: -30px
+                top: 2px
+                width: 20px
+                height: 20px
+                background: url("../icons/demand/demand_blue_1.svg") center center/cover no-repeat
+        &_warning
+            li
+                &:before
+                    background: url("../icons/demand/demand_red_1.svg") center center/cover no-repeat
+    &__descr
+        margin-top: 25px
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        color: #1ca8c3
+            
