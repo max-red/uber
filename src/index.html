@@ -31,7 +31,7 @@
         </div>
     </header>
 
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="promo__sub">
             <div class="container">
                 <div class="promo__subh">
@@ -403,6 +403,45 @@
         </div>
     </footer>
 
+    <div class="overlay">
+
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+
+            <form class="feed-form" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input  name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+                <button id="button" class="button">ОТПРАВИТЬ ЗАЯВКУ!</button>
+            </form>
+
+        </div>
+
+        <div class="modal" id="thanks">
+
+            <div class="modal__close">&times;</div>
+
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+
+            <div class="modal__descr">Мы свяжемся с вами 
+                в ближайшее время!</div>
+
+        </div>
+
+    </div>
+
+    <a href="#up" class="up">
+        <img src="icons/up.svg" alt="up">
+    </a>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
