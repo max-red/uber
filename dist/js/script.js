@@ -50,6 +50,10 @@ $('.feed-form').validate({
 $('input[name=phone]').mask("+7 (999) 999-99-99");
 
 $('form').submit(function(e) {
+    const isValid = $('.feed-form').valid();
+    if (!isValid) {
+        return;
+    }
     e.preventDefault();
     $.ajax({
         type: "POST",

@@ -27,6 +27,10 @@
         height: 32px
         background-color: #070716
         border-radius: 100%
+        transition: 0.5s all
+        &:hover
+            transform: scale(1.2)
+            text-decoration: none
         .icon-facebook:before, .icon-twitter, .icon-linkedin, .icon-instagram
             color: #ffffff
     &__links
@@ -71,3 +75,8 @@
     &__mobile
         a
             margin: 0 3px
+            img
+                transition: 0.5s all
+                &:hover
+                    transform: scale(1.05)
+                    width: -10%
