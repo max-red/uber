@@ -46,7 +46,7 @@
                         <a href="tel:84957970988" class="promo__phone">8 495 797 09 88</a>
                     </div>
         
-                    <button class="button button_subheader">заказать звонок</button>
+                    <button  data-modal="call" class="button button_subheader">заказать звонок</button>
         
                     <div class="promo__contact">
                         <a href="tel:84957970988" class="promo__phone">8 495 797 09 88</a>
@@ -71,7 +71,7 @@
                 зарабатывают от 80000- 120000 в месяц.
             </div>
             
-            <button class="button button_promo">ОТПРАВИТЬ ЗАЯВКУ!</button>
+            <button  data-modal="consultation" class="button button_promo">ОТПРАВИТЬ ЗАЯВКУ!</button>
 
         </div>
     </section>
@@ -405,6 +405,22 @@
 
     <div class="overlay">
 
+        <div class="modal" id="call">
+            <div class="modal__close">&times;</div>
+
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+
+            <form id="form_1" class="feed-form" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input  name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+                <button class="button button_submit">заказать звонок</button>
+            </form>
+
+        </div>
+
         <div class="modal" id="consultation">
             <div class="modal__close">&times;</div>
 
@@ -412,11 +428,11 @@
 
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
 
-            <form class="feed-form" action="#">
+            <form id="form_2" class="feed-form" action="#">
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input  name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш E-mail" type="email">
-                <button id="button" class="button">ОТПРАВИТЬ ЗАЯВКУ!</button>
+                <button class="button button_submit">ОТПРАВИТЬ ЗАЯВКУ!</button>
             </form>
 
         </div>
@@ -427,8 +443,10 @@
 
             <div class="modal__subtitle">Спасибо за вашу заявку!</div>
 
-            <div class="modal__descr">Мы свяжемся с вами 
-                в ближайшее время!</div>
+            <div class="modal__descr">
+                Мы свяжемся с вами 
+                в ближайшее время!
+            </div>
 
         </div>
 
@@ -440,6 +458,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
